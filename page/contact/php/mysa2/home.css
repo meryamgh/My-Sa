@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@600&family=Roboto:wght@300;400;500&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 600px;
+    font-family: 'Georgia', sans-serif;
+}
+html{scroll-behavior: smooth;}
+a:link {
+    text-decoration: none;
+    color: white;}
+li {list-style-type: none;}
+
+
+
+
+/* *********** Barre de Navigation *********** */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #555;
+    position: fixed;
+
+    width: 100%;
+    background-color: #deb88769;
+    box-shadow: 0px 0px 25px #725530;
+}
+
+nav h1 {
+    color: #555;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 30px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+nav .naviguation{
+    align-items: baseline;
+    margin-left: 220px;
+
+}
+
+nav .naviguation a {
+    
+    color: #fff;
+    margin-right: 10px;
+    border-left: 2px solid brown;
+    padding-left: 5px ;
+    font-size: 18px;
+    
+}
+
+
+
+nav a:hover{
+    color: #555;
+}
+
+
+@media screen and (max-width:990px) {
+    nav .naviguation{
+        margin-left: 0px;
+        
+
+        align-items: center;
+        justify-content: center;
+        
+    }
+}
+
+@media screen and (max-width:750px) {
+    nav .naviguation{
+        margin-left: 0px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        
+    }
+}
+
+
+
+
+
+
+/* *********** Images et Logo *********** */
+
+header {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 75vh;
+    width: 100%;
+    border-bottom: 5px solid #555;
+    border-bottom-right-radius: 11px;
+    border-bottom-left-radius: 11px;
+
+
+    background: url('img/bg2.jpg');
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 0px 25px #2e200e;
+    
+    color: white;
+
+}
+
+
+header h1 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 100px;
+}
+
+header h4 {
+    margin-top: -50px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Playfair Display', sans-serif;
+
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    padding: 0px 5px 0px 5px;
+    border-color: white;
+}
+
+
+.corps{
+    margin: 100px 50px;
+    padding: 20px;
+    background: rgba(90, 72, 22, 0.158);
+    box-shadow: rgb(219, 40, 40);
+    flex:1 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *********** Best Sells *********** */
+
+.section-title {
+    color: whitesmoke;
+    font-size: 60px;    
+    font-weight: 500;
+
+    text-align: right;
+    border-right: 6px solid whitesmoke;
+
+    padding-right: 60px;
+    margin-left: -50px;
+    margin-right: -50px;
+    background-color: brown;
+
+    box-shadow: 0px 0px 25px #2e200e;
+}
+
+
+.bests-items {
+    margin: 100px;
+}
+
+.best-plats {
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-size: cover;
+    background-position: center;
+}
+
+.no-grid {
+    min-width: 300px;
+    height: 500px;
+    flex: 1;
+}
+
+.plat1 {
+    background-image: url('img/noel1.jpg');
+}
+
+.plat2 {
+    background-image: url('img/noel2.jpg');
+}
+
+.plat3 {
+    background-image: url('img/cmd3.jpg');
+}
+
+.plat4 {
+    background-image: url('img/cmd4.jpg');
+}
+
+.details {
+    text-decoration: none;
+    color: black;
+    bottom: 0;
+    background: #ebeaeaa8;
+    padding: 5px 20px;
+}
+
+.name {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 3px;
+}
+
+.price {
+    color: seagreen;
+    line-height: 3px;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+
+
+
+/* *********** Nos Créa *********** */
+.all-plats {
+    margin: 100px;
+}
+
+.plat-grid {
+    display: grid;
+    min-height: 150vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 400px);
+}
+
+.grid1 {
+    background-image: url('img/p1.jpg');
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.grid2 {
+    background-image: url('img/p2.jpg');
+    grid-column: 3/5;
+}
+
+.grid3 {
+    background-image: url('img/p3.jpg');
+    grid-column: 3/5;
+}
+
+.grid4 {
+    background-image: url('img/p44.jpg');
+    grid-column: 1;
+    grid-row: 3/5;
+}
+
+.grid5 {
+    background-image: url('img/p55.jpg');
+    grid-column: 2/4;
+    grid-row: 3/5;
+}
+
+.grid6 {
+    background-image: url('img/p66.jpg');
+    grid-column: 4;
+    grid-row: 3/5;
+}
+
+
+
+
+
+
+
+/* **** SCROLL EN CSS **** */
+
+.myslide {
+    margin: 0;
+    padding: 0;
+    height: 75vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.text-slide h3{
+    font-size: 20px;
+}
+.text-slide{
+    height: 200px;
+    width: 450px;
+    padding: 10px 20px;
+    font-family: 'Montserrat';
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    text-align: center;
+    border-radius: 10px;
+
+    color: burlywood;
+    background-color: rgba(0, 0, 0);
+}
+
+.ici {
+    color: wheat;}
+
+.ici:hover{
+    color: red;
+    cursor: alias;
+}
+
+.slider {
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 400px;
+    height: 400px;
+}
+
+/* cas pour naviguation manuel */
+.navigation-manual {
+    position: absolute;
+    width: 400px;
+    margin-top: -80px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.manual-btn {
+    border: 2px solid brown;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 20px;
+
+}
+
+.manual-btn:hover {
+    background: brown;
+}
+
+#radio1:checked ~ .first {
+   margin-left: 0;
+}
+#radio2:checked ~ .first {
+   margin-left: -20%;
+}
+#radio3:checked ~ .first {
+   margin-left: -40%;
+}
+#radio4:checked ~ .first {
+   margin-left: -60%;
+}
+
+
+/* Css pour naviguation automatique */
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 400px;
+    justify-content: center;
+    margin-top: 420px;
+}
+
+.navigation-auto div {
+    border: 2px solid;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 20px;
+
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: black;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: black;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: black;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: black;
+}
+
+
+
+
+
+
+
+
+
+/*----------------------------BAS DE PAGE----------------------------*/
+
+
+::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+footer {
+    /* grow shrink basis */
+    flex-shrink: 0;
+    border-top: 5px solid #6f6f6f;
+    width: 100%;
+    background-color: black ;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+
+
+.contenu-footer {
+    max-height: fit-content;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 0 40px;
+}
+
+footer p {
+    text-align: left;
+}
+
+.bloc {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
+
+
+
+
+/* *********** Contact *********** */
+
+.footer-contact h3,
+.footer-services h3,
+.footer-horaires h3,
+.footer-medias h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+.footer-contact p {
+    margin-bottom: 1px;
+    text-align: left;
+    width: 200px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+
+
+/* *********** Services *********** */
+.liste-services,
+.liste-horaires,
+.liste-medias {
+    list-style-type:none;
+}
+
+.liste-horaires {
+    margin-left: -40px;
+}
+
+
+.footer-services .logo {
+    padding-top: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* *********** Medias *********** */
+
+.liste-medias li img {
+    background-color: antiquewhite;
+    height: 35px;
+    width: 40px;
+    border-radius: 40px;
+    padding-top: 0%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    margin-right: 10px;
+
+    
+}
+.liste-medias li {
+    font-size: 16px;     
+}
+.liste-medias a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+
+

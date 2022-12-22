@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@600&family=Roboto:wght@300;400;500&display=swap');
+
+
+/* Nos produits */
+
+section .link a:hover {
+    color: brown;
+    font-size : 20px;
+    }
+
+/* baniere produits */
+
+
+
+section{
+    display: flex;
+    flex-wrap:wrap;
+    font-family: 'palatino';
+    /*justify-content: center;
+    align-items: center;*/
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
+    width:100%;
+    background-color: rgb(245, 245, 245);
+    
+}
+
+section .link a{
+    color: black;
+    /*margin-right: 10px;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;*/
+}
+a:link 
+{ 
+ text-decoration:none; 
+}
+section .link{
+    width: 100%;
+    padding: 40px;
+    padding-left: 13%;
+    /*padding-left: 200px;*/
+    margin-bottom: 40px;
+    margin-top: 40px;
+    background-color: rgb(245, 245, 245);
+
+}
+
+section .link .item{
+    margin: 0 auto;
+    text-align: center;
+    width: 250px;
+    float: left;
+    background-color: rgb(245, 245, 245);
+}
+section .link .item img{
+    width: 70px;
+    height: 30%;
+}
+/*contenu */
+
+body{
+margin: 0;
+padding: 0;
+
+background-image: url("https://i.pinimg.com/474x/e2/6d/57/e26d572b76abcb6de3c84936b1f7f7ac.jpg");
+/*
+    background-color: white;
+    background-image: url(fond/fond1.jpg);*/
+
+}
+.pp{
+    text-align: center;
+    font-family: FontName;
+    text-shadow:#714242 0 -1px 0,
+#741919 2px 2px 0,
+#741919 3px 3px 0,
+#741919 4px 4px 0,
+#741919 5px 5px 10px;color:#FFE5BF;
+background-color: rgb(143, 38, 38);
+padding-bottom: 0;
+ 
+background-size: cover;
+height: 110px;
+margin: 0px;
+
+}
+a:link{text-decoration: none;
+color: black;}
+
+
+.products{
+
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 3rem;
+    display: grid;
+    margin-bottom: 5rem;
+    text-align: center; 
+    margin-right: 50px;
+    margin-left: 50px;
+    background-color: white;
+    padding: 50px ;
+    border-radius: 10px;
+    margin-top: 40px;
+    background: transparent 
+
+}
+.container{
+    border: 0px;
+    display: grid;
+    gap: 5rem;
+    margin-bottom: 5rem;
+    align-content: center;
+    border-radius: 30px;}
+
+
+.produit-info{
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    
+    background: radial-gradient(white 50%, rgb(143, 38, 38) 54.2%) ;
+}
+p{  
+    font-family: palatino;
+    font-size: large;
+    color: black;
+    }
+.nouvaute{background: brown;
+color: white;
+margin-top: 0px;
+padding: 10px;}
+.products .container .produit-info .image img{width: 250px;
+    height: 250px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+       
+    object-fit: contain;}
+
+
+/*------------------------------POPUP--------------------------*/
+
+    
+#btnPopup{
+    padding: 5px 10px;
+    background-color: whitesmoke;
+    cursor: pointer;
+    transition: all 0,5s;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display';
+    font-size: 14px;
+    border-radius: 3px;
+    font-weight: 200;
+    border: none;
+}
+#btnPopup:hover{
+background-color: brown;
+ background-position: left;
+ color: whitesmoke;
+    border: none;
+    box-shadow:0 0 20px whitesmoke;
+    font-weight: bold;}
+
+.overlay {
+position: fixed;
+left: 0px;
+top:0px;
+background-color: rgba(0,0 ,0 , 0.5);
+width: 100%;
+height: 100%;
+z-index:1;
+display:none;
+}
+.popup{
+margin: 10% auto;
+width : 70%;
+padding: 1em;
+box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+border-radius: 5px;
+ display: flex;
+}
+.btnClose {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    float: right;
+    font-size:16pt;
+    cursor: pointer;
+    color: rgb(26, 26, 26);
+}
+.btnClose:hover{
+    
+    background-color: whitesmoke;
+}
+.overlay .popup .contenant .img{
+    position:relative;
+    left:0px;
+    bottom:0px;
+
+}
+.overlay .popup .contenant .img img{width: 250px;
+    height: 250px;
+    border-radius: 10px;}
+
+.overlay .popup .contenant {
+  width: 100%;
+  height: 400px;  
+  color: black;
+  font-family: Georgia, serif;
+  background-attachment: fixed;
+  padding: 25px;
+  background-color: whitesmoke;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.overlay .popup .contenant2 {
+  width: 100%;
+  height: 400px;  
+  color: whitesmoke;
+  font-family: Georgia, serif;
+  background-attachment: fixed;
+  padding: 25px;
+  background-color: rgb(143, 91, 84);
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;}
